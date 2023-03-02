@@ -1,0 +1,453 @@
+@import "../../Styles/global.css";
+
+@media screen and (max-width: 2560px) {
+    .innerDiv{
+        max-width: 1366px;
+        margin: auto;
+    }
+
+    .ballot{
+        background: var(--color-primary);
+        color: var(--color-white);
+        padding-top: 2rem;
+    }
+
+    .heading{
+        font-size: var(--font-size-xxlarge);
+    }
+    
+    .categoryName{
+        background: var(--color-secondary);
+        padding: 7px;
+        width: 97%;
+        margin: 10px auto;
+        text-align: initial;
+        font-size: var(--font-size-xxlarge);
+        font-weight: 600;
+    }
+    
+    .submitBallotButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 7px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-darker);
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .submitBallotButton:hover{
+        background: var(--color-secondary-lighter);
+        box-shadow: 1px 1px 6px var(--color-secondary-darker);
+    }
+    
+    .nomineeCardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .nomineeCardDiv{
+        width: 17%;
+        border: 1px solid var(--color-secondary-lighter);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+        background: rgb(0 150 136 / 30%);
+        transition: .3s ease-in-out;
+        font-size: var(--font-size-xlarge);
+    }
+    .nomineeCardDiv:hover{
+        color: var(--color-text-hover) ;
+        background-color: var(--color-secondary-lighter);
+        transform: scale(1.02);
+    }
+    
+    .highlightedNomineeCardDiv{
+        width: 17%;
+        background-color: var(--color-secondary);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    .nomineeImage{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: auto;
+    
+    }
+    .nomineeName{
+        height: 4rem;
+        padding-top: 1rem;
+    }
+    .selectButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-lighter);
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: var(--font-size-medium)
+    }
+    
+    
+    .modal{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        background: rgb(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+        color: var(--color-black);
+    }
+    
+    .modalContainer{
+        background: var(--color-white);
+        height: 12rem;
+        width: 28rem;
+        padding: 1rem;
+    }
+    
+    .modalClose{
+        width: 5%;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .heading{
+        font-size: var(--font-size-xlarge);
+    }
+    
+    .categoryName{
+        background: var(--color-secondary);
+        padding: 7px;
+        width: 97%;
+        margin: 10px auto;
+        text-align: initial;
+        font-size: var(--font-size-xlarge);
+        font-weight: 600;
+    }
+    
+    .submitBallotButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 7px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-darker);
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: var(--font-size-xlarge);
+    }
+    
+    .nomineeCardDiv{
+        width: 21%;
+        border: 1px solid var(--color-secondary-lighter);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+        background: rgb(0 150 136 / 30%);
+        transition: .3s ease-in-out;
+        font-size: var(--font-size-large);
+    }
+
+    .highlightedNomineeCardDiv{
+        width: 21%;
+        background-color: var(--color-secondary);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+
+    .selectButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-lighter);
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: var(--font-size-small)
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .heading{
+        font-size: var(--font-size-large);
+    }
+    
+    .categoryName{
+        background: var(--color-secondary);
+        padding: 7px;
+        width: 97%;
+        margin: 10px auto;
+        text-align: initial;
+        font-size: var(--font-size-large);
+        font-weight: 600;
+    }
+    
+    .submitBallotButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 7px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-darker);
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: var(--font-size-large);
+    }
+    
+    .submitBallotButton:hover{
+        background: var(--color-secondary-lighter);
+        box-shadow: 1px 1px 6px var(--color-secondary-darker);
+    }
+    
+    .nomineeCardDiv{
+        width: 20%;
+        border: 1px solid var(--color-secondary-lighter);
+        height: 16rem;
+        margin: 1rem;
+        border-radius: 5px;
+        background: rgb(0 150 136 / 30%);
+        transition: .3s ease-in-out;
+        font-size: var(--font-size-medium);
+    }
+    .nomineeCardDiv:hover{
+        color: var(--color-text-hover) ;
+        background-color: var(--color-secondary-lighter);
+        transform: scale(1.02);
+    }
+    
+    .highlightedNomineeCardDiv{
+        width: 20%;
+        background-color: var(--color-secondary);
+        height: 16rem;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    .nomineeImage{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+    
+    }
+    .nomineeName{
+        height: 4rem;
+        padding: 15px;
+    }
+    .selectButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-lighter);
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: var(--font-size-small)
+    }
+    
+    .modalContainer{
+        background: var(--color-white);
+        height: 10rem;
+        width: 20rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .heading{
+        font-size: var(--font-size-large);
+    }
+    
+    .categoryName{
+        background: var(--color-secondary);
+        padding: 7px;
+        width: 97%;
+        margin: 10px auto;
+        text-align: initial;
+        font-size: var(--font-size-large);
+        font-weight: 600;
+    }
+    
+    .submitBallotButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 7px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-darker);
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: var(--font-size-medium);
+    }
+    
+    .submitBallotButton:hover{
+        background: var(--color-secondary-lighter);
+        box-shadow: 1px 1px 6px var(--color-secondary-darker);
+    }
+    
+    .nomineeCardDiv{
+        width: 43%;
+        border: 1px solid var(--color-secondary-lighter);
+        height: 19rem;
+        margin: 15px;
+        border-radius: 5px;
+        background: rgb(0 150 136 / 30%);
+        transition: .3s ease-in-out;
+        font-size: var(--font-size-xlarge);
+    }
+    .nomineeCardDiv:hover{
+        color: var(--color-text-hover) ;
+        background-color: var(--color-secondary-lighter);
+        transform: scale(1.02);
+    }
+    
+    .highlightedNomineeCardDiv{
+        width: 43%;
+        background-color: var(--color-secondary);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    .nomineeImage{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: auto;
+    
+    }
+    .nomineeName{
+        height: 4rem;
+        padding: 10px;
+        font-size: var(--font-size-medium)
+    }
+    .selectButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-lighter);
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: var(--font-size-small)
+    }
+    .modalContainer{
+        background: var(--color-white);
+        height: 10rem;
+        width: 15rem;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .heading{
+        font-size: var(--font-size-medium);
+    }
+    
+    .categoryName{
+        background: var(--color-secondary);
+        padding: 7px;
+        width: 95%;
+        margin: 10px auto;
+        text-align: initial;
+        font-size: var(--font-size-medium);
+        font-weight: 600;
+    }
+    
+    .submitBallotButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 7px 15px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-darker);
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: var(--font-size-small);
+    }
+    
+    .submitBallotButton:hover{
+        background: var(--color-secondary-lighter);
+        box-shadow: 1px 1px 6px var(--color-secondary-darker);
+    }
+    
+    .nomineeCardDiv{
+        width: 98%;
+        border: 1px solid var(--color-secondary-lighter);
+        height: 19rem;
+        margin: 15px;
+        border-radius: 5px;
+        background: rgb(0 150 136 / 30%);
+        transition: .3s ease-in-out;
+        font-size: var(--font-size-xlarge);
+    }
+    .nomineeCardDiv:hover{
+        color: var(--color-text-hover) ;
+        background-color: var(--color-secondary-lighter);
+        transform: scale(1.02);
+    }
+    
+    .highlightedNomineeCardDiv{
+        width: 98%;
+        background-color: var(--color-secondary);
+        height: 19rem;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    .nomineeImage{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: auto;
+    
+    }
+    .nomineeName{
+        height: 4rem;
+        padding: 10px;
+        font-size: var(--font-size-small)
+    }
+    .selectButton{
+        background: var(--color-secondary);
+        margin: 2rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 1px 3px var(--color-secondary-lighter);
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: var(--font-size-xsmall)
+    }
+    .modalContainer{
+        background: var(--color-white);
+        height: 7rem;
+        width: 10rem;
+        padding: 1rem;
+    }
+
+}
+
+

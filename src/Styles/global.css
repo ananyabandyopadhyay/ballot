@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext);  
+
+body{
+    font-family: "Roboto";
+}
+
+
+:root {
+    --color-primary: #0D2436;
+    --color-secondary: #009B86;
+    --color-secondary-darker: #02594d;
+    --color-secondary-lighter: #00b89f;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-text-hover: #CCCCCC;
+
+    --font-size-xsmall: 10px; 
+    --font-size-small: 12px; 
+    --font-size-medium: 14px; 
+    --font-size-large: 16px; 
+    --font-size-xlarge: 18px; 
+    --font-size-xxlarge: 20px; 
+    
+  }
